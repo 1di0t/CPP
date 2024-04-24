@@ -1,42 +1,42 @@
-//#include <iostream>
-//using namespace std;
-//
-//
-//bool isPrimeNumber(int number){
-//	if (number < 2 or number % 2 == 0) {
-//		return false;
-//	}
-//	else if (number == 2) {
-//		return true;
-//	}
-//	else {
-//		int i = 2;
-//		while (i * i <= number) {
-//			//for (int i = 2; i * i <= number; i++) {//i¸¦ number Àü±îÁö 1¾¿ Áõ°¡
-//			if (number % i == 0) {//number/iÀÇ ³ª¸ÓÁö°¡ 0ÀÌ¸é
-//				return false;//PrimeÀÌ ¾Æ´ÔÀ¸·Î º¯°æ
-//				break;//for¹® Å»Ãâ
-//			}
-//			i++;
-//		}
-//		return true;
-//	}
-//}
-//
-//int main() {
-//	int startNumber, endNumber;
-//	bool isPrime = 1;
-//
-//	cout << "½ÃÀÛ ¼ö¸¦ ÀÔ·Â : ";
-//	cin >> startNumber;
-//
-//	cout << "³¡ ¼ö¸¦ ÀÔ·Â : ";
-//	cin >> endNumber;
-//
-//
-//	for (int s = startNumber; s <= endNumber; s++) {
-//		if (isPrimeNumber(s)) { cout << s << "\t"; }
-//	}
-//	return 0;
-//}
-////ctrl + k + c&u
+#include <iostream>
+using namespace std;
+
+
+bool isPrimeNumber(int number){
+	if (number < 2 or number % 2 == 0) {
+		return false;
+	}
+	else if (number == 2) {
+		return true;
+	}
+	else {
+		int i = 2;
+		while (i * i <= number) {
+			//for (int i = 2; i * i <= number; i++) {//ië¥¼ number ì „ê¹Œì§€ 1ì”© ì¦ê°€
+			if (number % i == 0) {//number/iì˜ ë‚˜ë¨¸ì§€ê°€ 0ì´ë©´
+				return false;//Primeì´ ì•„ë‹˜ìœ¼ë¡œ ë³€ê²½
+				break;//forë¬¸ íƒˆì¶œ
+			}
+			i++;
+		}
+		return true;
+	}
+}
+
+int main() {
+	int startNumber, endNumber;
+	bool isPrime = 1;
+
+	cout << "ì‹œì‘ ìˆ˜ë¥¼ ì…ë ¥ : ";
+	cin >> startNumber;
+
+	cout << "ë ìˆ˜ë¥¼ ì…ë ¥ : ";
+	cin >> endNumber;
+
+
+	for (int s = startNumber; s <= endNumber; s++) {
+		if (isPrimeNumber(s)) { cout << s << "\t"; }
+	}
+	return 0;
+}
+//ctrl + k + c&u
